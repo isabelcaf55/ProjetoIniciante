@@ -14,7 +14,7 @@ function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
 
   const sectionTop = section.offsetTop
-  const sectionHeight = section.offseHeight
+  const sectionHeight = section.offsetHeight
 
   const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 

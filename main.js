@@ -86,3 +86,8 @@ const swiper = new Swiper('.swiper', {
   mousewheel: true,
 
 });
+
+
+function msg() {
+  alert("Email cadastrado com sucesso!");
+}

@@ -391,7 +391,7 @@ body.menu-expanded button path {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08);
   border-radius: 1rem;
   background-color: var(--brand-light);
-  margin:5rem;
+  margin: 5rem;
 }
 
 #depositions blockquote p {
@@ -406,15 +406,13 @@ body.menu-expanded button path {
   color: var(--primary-color);
   font: 700 3rem serif;
   position: absolute;
-  top:-0.5rem;
-  left:-2rem
-  
+  top: -0.5rem;
+  left: -2rem;
 }
 
 #depositions cite {
   display: flex;
   align-items: center;
-  
 }
 
 #depositions cite img {
@@ -422,7 +420,7 @@ body.menu-expanded button path {
   height: 3rem;
   object-fit: cover;
   clip-path: circle();
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .swiper-slide {
@@ -430,21 +428,14 @@ body.menu-expanded button path {
   padding: 5rem 1rem;
 }
 
-  span.swiper-pagination-bullet {
-    width: 0.75rem;
-    height: 0.75rem;
-    
-  
-  }
-
-  span.swiper-pagination-bullet {
- background-color: var(--primary-color);
+span.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
-
-
-
-
+span.swiper-pagination-bullet {
+  background-color: var(--primary-color);
+}
 
 /*=======================ABOUT=========================*/
 #about {
@@ -515,6 +506,59 @@ footer p {
 footer .social-links {
   justify-content: flex-start;
 }
+
+.wrapperFooter {
+  margin: 0 2.6rem 0 2.6rem;
+}
+
+#newsletter h3 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  margin-left: 1.2rem;
+
+  color: var(--brand-dark);
+}
+
+#newsletter {
+  margin-bottom: 3rem;
+  width: 20rem;
+  height: 15rem;
+}
+
+#newsletter form {
+  align-items: flex-start;
+}
+
+#newsletter p {
+  margin-bottom: 0.5rem;
+}
+
+#newsletter form button {
+  background-color: var(--brand-beige);
+  border: none;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  height: 2rem;
+  width: 9rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+#newsletter form button:hover {
+  background-color: var(--nav-height);
+
+  border: 1px solid white;
+}
+
+#newsletter form input {
+  border: none;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 20rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
 /*=======================BACK TO TOP=========================*/
 #backToTopButton {
   position: fixed;
@@ -666,7 +710,7 @@ footer .social-links {
   nav#navigation.scroll .menu li a::after {
     background-color: white;
   }
-  
+
   nav#navigation .menu li a.active::after,
   nav#navigation .menu li a:hover::after {
     padding-inline: 0.8rem;
@@ -799,5 +843,11 @@ footer .social-links {
 
   footer p {
     margin-bottom: 0;
+  }
+
+  .wrapperFooter {
+    margin: 0 12.3rem 0 12.3rem;
+    display: flex;
+    justify-content: space-between;
   }
 }

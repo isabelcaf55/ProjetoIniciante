@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctorCare</title>
 
@@ -14,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <nav id="navigation">
@@ -71,9 +74,10 @@
 
         <div class="menu">
           <ul>
-            <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
+            <li><a onclick="closeMenu()" href="#home">Início</a></li>
             <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
             <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            <li><a onclick="closeMenu()" href="#depositions">Depoimentos</a></li>
           </ul>
 
           <a class="button" onclick="closeMenu ()" href="#contact"
@@ -258,7 +262,7 @@
 
         <div class="col-b">
           <img
-            src="./assets/mulher=negra-com-moletom-verde-com-as -duas -maos-no-peito.png"
+            src="/assets/mulher=negra-com-moletom-verde-com-as -duas -maos-no-peito.png"
             alt="Mulher negra com blusa verde e sorrindo"
           />
         </div>
@@ -462,13 +466,101 @@
 
           <div class="col-b">
             <img
-              src="./assets/doutor-feliz-segurando-pranchetacompacientes.png"
+              src="assets/doutor-feliz-segurando-pranchetacompacientes.png"
               alt="Doutor feliz segurando prancheta com pacientes"
             />
           </div>
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+        
+    <section class="sectionDepositions" id="depositions">
+      <div class="depositionsGrid">
+          <header>
+            <h4>Depoimentos</h4>
+            <h2 class="title"> Veja o que falam nossos clientes</h2>
+          </header>
+          <div class="deposition swiper">
+            <div class="swiper-wrapper">
+            <div class="deposition swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut mollitia voluptas. Maiores accusamus quidem labore ratione cupiditate nesciunt omnis doloremque aut, quae dolore? Minus beatae eos laboriosam suscipit temporibus.
+                </p>
+                <cite>
+                  <img src="./assets/iara.png" alt="Foto de Iara Silva">
+                  Iara Silva
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="deposition swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut mollitia voluptas. Maiores accusamus quidem labore ratione cupiditate nesciunt omnis doloremque aut, quae dolore? Minus beatae eos laboriosam suscipit temporibus.
+                </p>
+                <cite>
+                  <img src="./assets/amanda.png" alt="Foto de Amanda Souza">
+                  Amanda Souza
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="deposition swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut mollitia voluptas. Maiores accusamus quidem labore ratione cupiditate nesciunt omnis doloremque aut, quae dolore? Minus beatae eos laboriosam suscipit temporibus.
+                </p>
+                <cite>
+                  <img src="./assets/ze.png" alt="Foto de José Silva">
+                  José Alves
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+       
+        </div>
+     
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section id="contact">
       <div class="wrapper">
@@ -554,7 +646,7 @@
 
         <div class="col b">
           <img
-          src="./assets/homem-negro-com-moletom-bege-mexendo-no-celular.png"
+          src="/assets/homem-negro-com-moletom-bege-mexendo-no-celular.png"
           alt="Homem negro com moletom bege mexendo no celular e sorrindo"
         />
         </div>
@@ -740,6 +832,7 @@
     </a>
     <!--------ScrollReaveal Lib-->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

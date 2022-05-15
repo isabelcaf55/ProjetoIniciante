@@ -3,11 +3,13 @@ window.addEventListener('scroll', onScroll)
 onScroll()
 function onScroll() {
   showNavOnScroll()
-  showBackToTopButtonOnScroll ()
-  activateMenuAtCurrentSection (home)
-  activateMenuAtCurrentSection (services)
-  activateMenuAtCurrentSection (about)
-  activateMenuAtCurrentSection (contact)
+  showBackToTopButtonOnScroll()
+
+  activateMenuAtCurrentSection(home)
+  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(about)
+  activateMenuAtCurrentSection(contact)
+  activateMenuAtCurrentSection(depositions)
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -22,25 +24,18 @@ function activateMenuAtCurrentSection(section) {
 
   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
-  const sectionBoundaries = sectionTopReachOrPassedTargetline &&
-  !sectionEndPassedTargetline
+  const sectionBoundaries =
+    sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
   const sectionId = section.getAttribute('id')
-  const menuElement = document
-  .querySelector(`.menu a[href*=${sectionId}]`)
+  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
 
   menuElement.classList.remove('active')
 
-  
-   if (sectionBoundaries) {
+  if (sectionBoundaries) {
     menuElement.classList.add('active')
-
   }
-
-
-
 }
-
 
 function showNavOnScroll() {
   if (scrollY > 0) {
@@ -50,7 +45,7 @@ function showNavOnScroll() {
   }
 }
 
-function showBackToTopButtonOnScroll () {
+function showBackToTopButtonOnScroll() {
   if (scrollY > 400) {
     backToTopButton.classList.add('show')
   } else {
@@ -71,5 +66,23 @@ ScrollReveal({
   distance: '30px',
   duration: 700
 }).reveal(
-  '#home, #home img, #home .stats, #services, #services header, #services .card, #about, #about header, #about .content'
+  '#home, #home img, #home .stats, #services, #services header, #services .card, #about, #about header, #about, #depositions .content'
 )
+
+/*------------Depositions----------*/
+
+const swiper = new Swiper('.swiper', {
+ 
+  direction: 'horizontal',
+  loop: true,
+
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  
+    bulletActiveClass:	'swiper-pagination-bullet-active',
+  },
+  mousewheel: true,
+
+});
